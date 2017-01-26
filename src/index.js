@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 import hypernova, { serialize, load, toScript, fromScript } from 'hypernova';
 import { StyleSheet, StyleSheetServer } from 'aphrodite';
+import _renderReactAmpWithAphrodite from './renderReactAmpWithAphrodite';
+
+export const renderReactAmpWithAphrodite = _renderReactAmpWithAphrodite;
 
 export const renderReactWithAphrodite = (name, component) => hypernova({
   server() {
